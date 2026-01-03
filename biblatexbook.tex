@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[backend=biber, style=authoryear]{biblatex}
+\addbibresource{book.bib}
+
+\begin{document}
+
+\section{biblatex Example}
+
+This section demonstrates the biblatex package with author-year citations.
+
+\subsection{Basic Citations}
+
+Here are some example citations using biblatex:
+
+\begin{itemize}
+    \item Parenthetical citation: \parencite{knuth1986texbook}
+    \item Text citation: \textcite{lamport1994latex}
+    \item Multiple citations: \parencite{knuth1986texbook, lamport1994latex}
+\end{itemize}
+
+\subsection{Citation Not in Database}
+
+Let's try citing a reference that doesn't exist in our database: \parencite{nonexistent2024}
+
+\newpage
+
+\section{biblatex with Numeric Style}
+
+This section demonstrates the biblatex package with numeric citations.
+
+\begin{itemize}
+    \item Citation with numeric style: \cite{knuth1986texbook}
+    \item Another numeric citation: \cite{lamport1994latex}
+\end{itemize}
+
+% Print bibliography
+\printbibliography
+
+\end{document}

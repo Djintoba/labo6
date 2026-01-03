@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{natbib}
+\bibliographystyle{plain}
+
+\begin{document}
+
+\section{natbib Example}
+
+This section demonstrates the natbib package with numeric citations.
+
+\subsection{Basic Citations}
+
+Here are some example citations using natbib:
+
+\begin{itemize}
+    \item Parenthetical citation: \citep{knuth1986texbook}
+    \item Text citation: \citet{lamport1994latex}
+    \item Multiple citations: \citep{knuth1986texbook, lamport1994latex}
+\end{itemize}
+
+\subsection{Citation Not in Database}
+
+Let's try citing a reference that doesn't exist in our database: \citep{Thomas2008}
+Reference that doesn't exist: \citep{Thomas2008}
+
+\bibliography{book} 
+
+\end{document}
